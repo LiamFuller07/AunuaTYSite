@@ -1,10 +1,91 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some basic elements */
+body, h1, p {
     margin: 0;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
+    padding: 0;
+  }
+  
+  /* Apply a font */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     color: #333;
-}
+    text-align: center;
+    background: #f4f4f4;
+  }
+  
+  /* Style the header */
+  h1 {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Structure the main content area */
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Style the sections */
+  section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Images within sections */
+  section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Section headings */
+  section h2 {
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  /* Paragraphs within sections */
+  section p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  /* Ensure the Typeform takes up full width */
+  .typeform-widget {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+  }
+  
+  /* Responsive image row */
+  .image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Style individual image containers */
+  .image-container {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  /* Adjust the image container on smaller screens */
+  @media (max-width: 600px) {
+    .image-container {
+      flex-basis: 100%;
+    }
+  }
+  
+  /* Additional media query for larger screens if needed */
+  @media (min-width: 1024px) {
+    .image-container {
+      flex-basis: calc(33.333% - 20px);
+    }
+  }
+  
